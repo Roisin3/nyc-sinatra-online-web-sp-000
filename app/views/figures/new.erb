@@ -1,0 +1,10 @@
+<form action="/figures" method='post'>
+  <label>Name</label>
+  <input type='text' id='figure_name' name='figure[name]'><br></br>
+
+  <label><h4>Titles</h4></label>
+  <label><%= title.name %>
+  <input type='checkbox' id="title_<%= title.id %>" name='figure[title_ids]' value='<%= title.id %>'><br>
+  <% end %>
+
+  
